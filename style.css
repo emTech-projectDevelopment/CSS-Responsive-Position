@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.parent {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box {
+    width: 40%;
+    height: 35%;
+    background: rgb(243, 240, 240);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: 600ms;
+}
+
+.home {
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    left: 30%;
+    border: 2px solid green;
+}
+.home:hover {
+    transform: scale(1.3);
+    border-radius: 50%;
+    height: 40%;
+}
+
+.about {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border: 2px solid blue;
+}
+.about:hover {
+    transform: scale(1.3);
+    z-index: 3;
+    border-radius: 50%;
+    height: 40%;
+}
+
+.contact {
+    position: absolute;
+    top: 20%;
+    left: 7.5%;
+    border: 2px solid rgb(128, 0, 34);
+}
+.contact:hover {
+    transform: scale(1.3);
+    z-index: 3;
+    border-radius: 50%;
+    height: 40%;
+}
+
+.box-heading {
+    width: 100%;
+    background: rgba(173, 216, 230, 0.607);
+}
+
+@media screen and (max-width: 550px) {
+    .parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        margin: 10px auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        border-radius: 5px;
+    }
+    .box-heading {
+        font-size: larger;
+    }
+  }
